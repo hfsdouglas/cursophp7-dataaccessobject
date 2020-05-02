@@ -28,8 +28,16 @@
     //$aluno->setDessenha("@lun0");
     //$aluno->insert();
     //echo $aluno;
+    
+    //Criando um novo Usuário
+    //$aluno = new Usuarios("Aluno2", "@alun02");
+    //$aluno->insert();
 
-    $aluno = new Usuarios("Aluno2", "@alun02");
-    $aluno->insert();
+    //echo $aluno;
 
-    echo $aluno;
+    //Atualizando um usuário
+    $usuario = new Usuarios();
+    $usuario->loadById(8);
+    $usuario->update("professor", "!@#$%¨&*");
+
+    echo $usuario;
