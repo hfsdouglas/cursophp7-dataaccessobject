@@ -36,8 +36,15 @@
     //echo $aluno;
 
     //Atualizando um usuário
+    //$usuario = new Usuarios();
+    //$usuario->loadById(8);
+    //$usuario->update("professor", "!@#$%¨&*");
+
+    //echo $usuario;
+
+    //Deletando um usuário
     $usuario = new Usuarios();
-    $usuario->loadById(8);
-    $usuario->update("professor", "!@#$%¨&*");
+    $usuario->loadById(6);
+    $usuario->delete();
 
     echo $usuario;
